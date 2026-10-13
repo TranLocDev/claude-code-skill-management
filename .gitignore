@@ -1,3 +1,6 @@
 CLAUDE.local.md
 .claude/settings.local.json
 trash/
+
+features/*
+!features/_template/

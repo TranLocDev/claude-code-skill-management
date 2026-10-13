@@ -1,6 +1,9 @@
-# review — <feature>
+# Review — <feature>
 
-> TODO: thay bằng template thật cho bước review.
-
-## Section 1
-## Section 2
+## Phạm vi
+## Đối chiếu plan
+## Findings
+| Mức | File:line | Vấn đề | Đề xuất |
+|-----|-----------|--------|---------|
+## Kết luận
+- [ ] Đạt  - [ ] Cần sửa (quay lại /dev)

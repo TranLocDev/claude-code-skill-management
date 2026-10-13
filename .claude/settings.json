@@ -1,7 +1,20 @@
 {
   "permissions": {
-    "allow": [],
-    "deny": []
+    "additionalDirectories": ["../vi-casso-be"],
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm run lint:*)",
+      "Bash(npm test:*)",
+      "Bash(npx jest:*)",
+      "Bash(git -C ../vi-casso-be diff:*)",
+      "Bash(git -C ../vi-casso-be status:*)",
+      "Bash(git -C ../vi-casso-be log:*)"
+    ],
+    "deny": [
+      "Bash(git -C ../vi-casso-be push:*)",
+      "Read(../vi-casso-be/.env)",
+      "Read(../vi-casso-be/keys/**)"
+    ]
   },
   "hooks": {}
 }

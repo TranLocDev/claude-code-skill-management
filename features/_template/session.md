@@ -5,6 +5,7 @@
 - **Ngày bắt đầu**: YYYY-MM-DD
 
 ## Stages
+- [ ] docs
 - [ ] spec
 - [ ] plan
 - [ ] dev

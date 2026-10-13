@@ -1,6 +1,10 @@
-# dev — <feature>
+# Dev log — <feature>
 
-> TODO: thay bằng template thật cho bước dev.
-
-## Section 1
-## Section 2
+## Task đã làm
+| Task | File thay đổi | Ghi chú |
+|------|---------------|---------|
+## Lệnh đã chạy
+- `npm run build`:
+- `npm run lint`:
+## Lệch so với plan
+## Việc còn lại

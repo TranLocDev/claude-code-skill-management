@@ -1,26 +1,12 @@
-# {{PROJECT_NAME}}-skill
+# vi-casso-be-skill
 
-Bộ công cụ Claude Code (agent, skill, workflow) hỗ trợ phát triển dự án **`{{PROJECT_NAME}}`**.
+Bộ công cụ Claude Code (agent, skill, workflow) hỗ trợ phát triển dự án **`vi-casso-be`**.
 
-## Áp dụng cho dự án mới
-
-Template này dùng được cho bất kỳ dự án nào. Thay 2 placeholder trong `README.md` và `CLAUDE.md`:
-
-| Placeholder | Ví dụ |
-|-------------|-------|
-| `{{PROJECT_NAME}}` | `vi-casso-be` |
-| `{{PROJECT_PATH}}` | `../vi-casso-be` |
-
-```bash
-cp -r <template-folder> <ten-du-an>-skill && cd <ten-du-an>-skill
-sed -i '' -e 's#{{PROJECT_NAME}}#vi-casso-be#g' -e 's#{{PROJECT_PATH}}#../vi-casso-be#g' README.md CLAUDE.md
-```
-
-(Trên Linux bỏ `''` sau `-i`.) Sau đó chỉnh `paths:` trong `.claude/rules/*.md` theo cấu trúc dự án.
+> Nhánh `vi-casso-be` của template. Template gốc (có placeholder) ở nhánh `main`.
 
 ## Vai trò của folder
 
-- **Không chứa code sản phẩm.** Code nằm ở `{{PROJECT_PATH}}`.
+- **Không chứa code sản phẩm.** Code nằm ở `../vi-casso-be`.
 - Là nơi **thiết kế, thử nghiệm và quản lý** team agent phục vụ quy trình phát triển feature:
 
   ```
@@ -104,8 +90,8 @@ Có thể gọi trực tiếp agent: *"Dùng agent reviewer review thay đổi c
 - **Sửa vai trò agent:** `.claude/agents/<agent>.md` (prompt, `tools`, `model`).
 - **Sửa mẫu output:** `.claude/skills/<bước>/template.md`.
 - **Thêm bước mới:** tạo agent và skill tương ứng, thêm vào bảng trong `team-run/SKILL.md` và vào `features/_template/session.md`.
-- **Convention dự án:** `.claude/rules/*.md`. Chỉnh `paths:` cho khớp với cấu trúc `{{PROJECT_NAME}}`.
+- **Convention dự án:** `.claude/rules/*.md`. Chỉnh `paths:` cho khớp với cấu trúc `vi-casso-be`.
 
 ## Dùng cho dự án chính
 
-Copy hoặc symlink `.claude/agents`, `.claude/skills`, `.claude/rules` sang `{{PROJECT_PATH}}/.claude/` để dùng ngay trong repo chính, hoặc sang `~/.claude/` để dùng toàn cục.
+Copy hoặc symlink `.claude/agents`, `.claude/skills`, `.claude/rules` sang `../vi-casso-be/.claude/` để dùng ngay trong repo chính, hoặc sang `~/.claude/` để dùng toàn cục.
